@@ -1,0 +1,13 @@
+body {
+    margin: 300px 50px;
+}
+
+.keys-row {
+    margin: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

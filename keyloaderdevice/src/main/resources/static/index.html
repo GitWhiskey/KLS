@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Loader</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom-styles.css">
+    <!-- JS -->
+    <script src="/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/js/submit-buttons-handlers.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="title">
+                Enter two parts of uber-master-key
+            </div>
+        </div>
+    </div>
+    <div class="row keys-row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input id="input-mk-1"
+                       type="text"
+                       class="form-control"
+                       placeholder="Master key part 1"
+                       aria-label="Master key part 1">
+                <span class="input-group-btn">
+                    <button id="submit-mk-1" class="btn btn-secondary" type="button">Submit</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input id="input-mk-2"
+                       type="text"
+                       class="form-control"
+                       placeholder="Master key part 2"
+                       aria-label="Master key part 2">
+                <span class="input-group-btn">
+                    <button id="submit-mk-2" class="btn btn-secondary" type="button">Submit</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- DEMO STUFF -->
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="input-group">
+                <input id="input-deciphered-keys-id"
+                       type="text"
+                       class="form-control"
+                       placeholder="Enter terminal id for keys"
+                       aria-label="Enter terminal id for keys">
+                <span class="input-group-btn">
+                    <button id="btn-get-keys" class="btn btn-secondary" type="button">Get keys</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <input id="input-decrypted-keys-response" type="text" class="form-control"/>
+        </div>
+    </div>
+    <script src="/js/demo-scripts.js"></script>
+</body>
+</html>
