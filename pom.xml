@@ -11,6 +11,7 @@
 
     <modules>
         <module>keyloaderdevice</module>
+        <module>terminal</module>
     </modules>
 
 </project>

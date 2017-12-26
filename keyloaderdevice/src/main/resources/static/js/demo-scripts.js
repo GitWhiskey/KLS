@@ -7,10 +7,10 @@ $('#btn-get-keys').click(function() {
         url: '/decrypted-keys/' + terminalNumber,
         method: 'GET'
     }).done(function (decryptedKeys) {
-        var keysString = JSON.stringify(decryptedKeys);
+        var keysString = JSON.stringify(decryptedKeys, null, 2);
         $('#input-decrypted-keys-response').val(keysString);
     }).fail(function (error) {
-        var errorString = JSON.stringify(error);
+        var errorString = JSON.stringify(error, null, 2);
         $('#input-decrypted-keys-response').val(errorString);
     })
 });
